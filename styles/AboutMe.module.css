@@ -13,3 +13,8 @@
     width: 250px;
     border-radius: 100%;
 }
+
+.aboutMe p {
+    margin: auto;
+    width: 50%;
+}
