@@ -78,16 +78,17 @@ export const getServerSideProps = async pageContext => {
         feedCategory = "general"
     }
     const apiResponse = await fetch(
-        `https://newsapi.org/v2/top-headlines?country=us&category=${feedCategory}&pageSize=5&page=${pageNumber}`,
+        `https://newsapi.org/v2/top-headlines?country=us&category=${feedCategory}&pageSize=2&page=${pageNumber}`,
         {
             headers: {
-                Authorization: `Bearer ${process.env.NEXT_PUBLIC_NEWS_KEY}`,
+                Authorization: `Bearer ${process.env.NEXT_PUBLIC_NEWS_KEY2}`,
             },
         },
     );
 
     const apiJson = await apiResponse.json();
     const { articles } = apiJson;
+    console.log(apiJson)
 
 
 
