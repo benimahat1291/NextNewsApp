@@ -45,15 +45,9 @@ export const Feed = ({ pageNumber, feedCategory, articles }) => {
                         className={pageNumber === 5 ? styles.disabled : styles.active}>
                         Next Page
                     </div>
-
-
-
                 </div>
-
-
             </div>
             </Layout>
-
         </>
     );
 };
@@ -81,7 +75,7 @@ export const getServerSideProps = async pageContext => {
         `https://newsapi.org/v2/top-headlines?country=us&category=${feedCategory}&pageSize=2&page=${pageNumber}`,
         {
             headers: {
-                Authorization: `Bearer ${process.env.NEXT_PUBLIC_NEWS_KEY2}`,
+                Authorization: `Bearer ${process.env.NEXT_PUBLIC_NEWS_KEY}`,
             },
         },
     );
