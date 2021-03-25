@@ -1,9 +1,10 @@
 import { Toolbar } from "../components/toolbar";
+import Layout from "../components/Layout"
 import styles from "../styles/AboutMe.module.css"
 export const EOM = () => {
     return(
+        <Layout>
         <div className='page__container'>
-            <Toolbar/>
             <div className={styles.main}>
                 <h1>News App Developer</h1>
                 <div className={styles.aboutMe}>
@@ -16,6 +17,7 @@ export const EOM = () => {
                 
             </div>
         </div>
+        </Layout>
     )
 };
 
