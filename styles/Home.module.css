@@ -1,7 +1,56 @@
 .main {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main > div > h1 > span {
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+}
+
+.main > div > h1 {
+  font-size: 5rem;
+  font-family: "Fugaz One", cursive;
+  color: #0275d8;
+}
+
+
+
+.textloop {
+  font-family: "Raleway", sans-serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.delay {
+  animation: cssAnimation 0s 1s forwards;
+  visibility: hidden;
+}
+
+@keyframes cssAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+    .textloop {
+        font-family: "Raleway", sans-serif;
+        font-size: 2rem;
+        text-transform: uppercase;
+      }
+
+      
+.main > div > h1 {
+    font-size: 3rem;
+    font-family: "Fugaz One", cursive;
+    color: #0275d8;
+  }
 }
