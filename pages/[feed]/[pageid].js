@@ -10,11 +10,11 @@ export const Feed = ({ pageNumber, feedCategory, articles }) => {
         <>
 
                 <Layout>
-            <div className="page__container">
+            <div>
                 <Categories/>
                 <div className={styles.main}>
                     {articles.map((article, index) => (
-                        <div key={index} className={styles.post}>
+                        <div data-aos="zoom-in-up" data-aos-offset="" key={index} className={styles.post}>
                             <h1 onClick={() => (window.location.href = article.url)}>{article.title}</h1>
                             <p>{article.description}</p>
                             {!!article.urlToImage && <img src={article.urlToImage} />}
@@ -71,7 +71,7 @@ export const getServerSideProps = async pageContext => {
         feedCategory = "general"
     }
     const apiResponse = await fetch(
-        `https://newsapi.org/v2/top-headlines?country=us&category=${feedCategory}&pageSize=2&page=${pageNumber}`,
+        `https://newsapi.org/v2/top-headlines?country=us&category=${feedCategory}&pageSize=5&page=${pageNumber}`,
         {
             headers: {
                 Authorization: `Bearer ${process.env.NEXT_PUBLIC_NEWS_KEY}`,

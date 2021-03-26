@@ -28,15 +28,13 @@
 .delay {
   animation: cssAnimation 0s 1s forwards;
   visibility: hidden;
+ 
 }
 
 @keyframes cssAnimation {
-  from {
-    opacity: 0;
-  }
+
   to {
     visibility: visible;
-    opacity: 1;
   }
 }
 
