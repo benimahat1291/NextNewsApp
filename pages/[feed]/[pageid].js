@@ -1,5 +1,4 @@
 import { useRouter } from "next/router";
-import { Toolbar } from "../../components/toolbar";
 import { Categories} from "../../components/categories"
 import Layout from "../../components/Layout"
 import styles from "../../styles/Feed.module.css";
