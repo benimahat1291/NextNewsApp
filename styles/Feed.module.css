@@ -47,19 +47,39 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .paginator div {
     margin: 25px;
+    font-family: "Raleway", sans-serif;
 }
 
 .paginator .active {
-    cursor: pointer
+    cursor: pointer;
+    opacity: 0.8;
 }
+
+.active:hover {
+    color: #0275d8;
+}
+
 .paginator .disabled {
     cursor: not-allowed;
-    color: rgb(179, 179, 179)
+    color: rgb(179, 179, 179);
+    opacity: 0.2;
 }
+
+.pageNumber {
+    border: 1px solid #0275d8;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 @media (max-width: 550px){
 

@@ -1,22 +1,48 @@
 import { Toolbar } from "../components/toolbar";
 import Layout from "../components/Layout"
 import styles from "../styles/AboutMe.module.css"
+import Typewriter from 'typewriter-effect';
+
+import GitHubIcon from '@material-ui/icons/GitHub';
 export const EOM = () => {
-    return(
+    return (
         <Layout>
-        <div className='page__container'>
-            <div className={styles.main}>
-                <h1>News App Developer</h1>
-                <div className={styles.aboutMe}>
-                    <h3>Beni Mahat</h3>
-                    <h6>Full Stack Web Developer</h6>
-                    <img src="https://avatars.githubusercontent.com/u/69019321?s=460&u=74a1a434940945b562698fca7175c461eb73d7c7&v=4"/>
-                    <p>Full Stack Web Developer passionate about creating an ideal user experience with React. Aspiring to master all React libraries and technologies, I stay innovative by challenging myself to implement new technologies in every project. Recently received a Certificate in Web Development from Denver University. Excellent interpersonal communicator and a proactive collaborator valued on team-based projects and resourceful individually. Deadline driven, I establish measurable goals and resiliently work to achieve them. Currently I am seeking an environment where I can professionally utilize and grow my skills as a developer.</p>
+            <div>
+                <div className={styles.main}>
+                    <div className={styles.aboutApp}>
+                        <h1 className={styles.aboutHeader}><span>NEXT</span> NEWS</h1>
+                        <p>Find the Latest News Articles from<span> NewsApi.Org</span> Built Using <span>React/Next.js</span> for <span>SSR/SEO</span> And a mobile friendly <span>Responsive UI</span> </p>
+
+                    </div>
+
+
+                    <div className={styles.aboutMe}>
+                        <img src="https://avatars.githubusercontent.com/u/69019321?s=460&u=74a1a434940945b562698fca7175c461eb73d7c7&v=4" />
+                        <div>
+                            <div className={styles.header}>
+                                <h1>Developer</h1>
+                                <h3>Beni Mahat</h3>
+                                <h5>
+                                    <Typewriter options={{
+                                        strings: ["Full Stack Web Apps", 'React/Next.js', "Node/Express.js", "Responisve UI Desgin"],
+                                        autoStart: true,
+                                        loop: true,
+                                    }}
+                                        onInit={(typewriter) => {
+                                            typewriter.start();
+                                        }}
+                                    /></h5>
+                            </div>
+                            <div className={styles.buttons}>
+                                <div><button type="button" className={styles.button}><span>View App Repo</span></button></div>
+                                <div><button type="button" className={styles.button}><span>View Profile</span></button></div>
+                            </div>
+                        </div>
+
+                    </div>
 
                 </div>
-                
             </div>
-        </div>
         </Layout>
     )
 };

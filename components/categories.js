@@ -9,7 +9,7 @@ export const Categories = () => {
     return (
         <>
             <div className={styles}>
-            <nav className="navbar navbar-expand-md navbar-dark bg-primary">
+            <nav className="navbar navbar-expand-md navbar-dark">
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                     <a className="navbar-brand" href="#">CATEGORIES</a>
                     <span className="dropdown-toggle"></span>
