@@ -32,7 +32,7 @@
 @media (max-width: 550px){
 
     .main {
-    width: 95%;
+    width: 100%;
     justify-content: space-around;
     align-items: center;
 }
