@@ -4,6 +4,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #222;
 }
 
 .main div {
@@ -25,7 +29,6 @@
     transform: scale(1.1);
 }
 
-
 @media (max-width: 550px){
 
     .main {
@@ -46,8 +49,14 @@
  
 }
 
+
 .logo {
     width: 150px;
+
 }
 
+}
+
+.activeNav {
+    color: #fff;
 }

@@ -34,8 +34,8 @@ export const EOM = () => {
                                     /></h5>
                             </div>
                             <div className={styles.buttons}>
-                                <div><button type="button" className={styles.button}><span>View App Repo</span></button></div>
-                                <div><button type="button" className={styles.button}><span>View Profile</span></button></div>
+                                <div><button  onClick={() => (window.location.href = "https://github.com/benimahat1291/NextNewsApp" )} type="button" className={styles.button}><span>View App Repo</span></button></div>
+                                <div><button onClick={() => (window.location.href = "https://benimahat1291.github.io/portfolio2021/#/" )} type="button" className={styles.button}><span>View Profile</span></button></div>
                             </div>
                         </div>
 
