@@ -10,15 +10,15 @@ export const EOM = () => {
             <div>
                 <div className={styles.main}>
                     <div className={styles.aboutApp}>
-                        <h1 className={styles.aboutHeader}><span>NEXT</span> NEWS</h1>
-                        <p>Find the Latest News Articles from<span> NewsApi.Org</span> Built Using <span>React/Next.js</span> for <span>SSR/SEO</span> And a mobile friendly <span>Responsive UI</span> </p>
+                        <h1 data-aos="zoom-out-up" data-aos-offset="-200" className={styles.aboutHeader}><span>NEXT</span> NEWS</h1>
+                        <p data-aos-delay={1000} data-aos="fade-up" data-aos-offset="-200"> Find the Latest News Articles from<span> NewsApi.Org</span> Built Using <span>React/Next.js</span> for <span>SSR/SEO</span> And a mobile friendly <span>Responsive UI</span> </p>
 
                     </div>
 
 
                     <div className={styles.aboutMe}>
-                        <img src="https://avatars.githubusercontent.com/u/69019321?s=460&u=74a1a434940945b562698fca7175c461eb73d7c7&v=4" />
-                        <div>
+                        <img data-aos-delay={2000} data-aos="flip-left" data-aos-offset="-200" src="https://avatars.githubusercontent.com/u/69019321?s=460&u=74a1a434940945b562698fca7175c461eb73d7c7&v=4" />
+                        <div data-aos-delay={2500} data-aos="flip-left" data-aos-offset="-200">
                             <div className={styles.header}>
                                 <h1>Developer</h1>
                                 <h3>Beni Mahat</h3>
