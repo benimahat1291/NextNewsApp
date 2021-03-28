@@ -14,10 +14,12 @@ export const Feed = ({ pageNumber, feedCategory, articles }) => {
                     <Categories />
                     <div className={styles.main}>
                         {articles.map((article, index) => (
-                            <div data-aos="zoom-in-up" data-aos-offset="" key={index} className={styles.post}>
+                            <div className={styles.post}>
+                            <div data-aos="zoom-in-up" data-aos-offset="" key={index} >
                                 <h1 onClick={() => (window.location.href = article.url)}>{article.title}</h1>
                                 <p>{article.description}</p>
                                 {!!article.urlToImage && <img src={article.urlToImage} />}
+                            </div>
                             </div>
                         ))}
                     </div>
