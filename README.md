@@ -20,8 +20,10 @@ Next news is a simple way to view the latest news articles. It uses the Api libr
 ## Screenshots
 
 
-![ home:](public//sc1.png)
-![ feed:](public//sc2.png)
+![ home:](public/sc1.png)
+![ feed:](public/sc2.png)
+![ feedMobile:](public/sc3.png)
+![ feedabout:](public/sc4.png)
 
 ## Installation Instructions
 
